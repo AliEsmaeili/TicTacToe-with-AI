@@ -1,0 +1,62 @@
+<h2 style="text-align: center;">Description</h2>
+
+<p>Let's write the "hard" level.</p>
+
+<p>Compared to the "medium" level difficulty, this level thinks farther ahead than simply finding an immediate win or preventing an immediate loss. This level can see two moves ahead, three moves ahead, and so on. In fact, it can see all the possible outcomes of the game at once and will choose the best move. This level will play perfectly regardless of the opponent’s skill.</p>
+
+<p>The algorithm that implements this is called Minimax. This is a brute force algorithm that maximizes the value of the one's own position and minimizes the value of the opponent's position. The algorithm works not just for Tic-Tac-Toe but for every game with two players and alternate move order, for example, chess.</p>
+
+<p>You need to implement this as the "hard" difficulty level. Before you start working, check out a <a target="_blank" href="https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37" rel="nofollow noopener noreferrer">tutorial on using the algorithm</a>.</p>
+
+<p>You also should add a parameter "hard" to be able to play against this level.</p>
+
+<h2 style="text-align: center;">Example</h2>
+
+<p>The example below shows how your program should work.</p>
+
+<pre><code class="language-no-highlight">Input command: start hard user
+Making move level "hard"
+---------
+|       |
+| X     |
+|       |
+---------
+Enter the coordinates: 2 2
+---------
+|       |
+| X O   |
+|       |
+---------
+Making move level "hard"
+---------
+|   X   |
+| X O   |
+|       |
+---------
+Enter the coordinates: 3 2
+---------
+|   X   |
+| X O   |
+|   O   |
+---------
+Making move level "hard"
+---------
+| X X   |
+| X O   |
+|   O   |
+---------
+Enter the coordinates: 3 1
+---------
+| X X   |
+| X O   |
+| O O   |
+---------
+Making move level "hard"
+---------
+| X X X |
+| X O   |
+| O O   |
+---------
+X wins
+
+Input command: exit</code></pre>
